@@ -6,15 +6,23 @@ import CategoryCard from "./CategoryCard"
 import Product from "./Product"
 import { Provider } from "./MyContext"
 
-export default function HomePage () {
+export default function HomePage() {
     const [selectedValue, setSelectedValue] = useState('');
-    console.log(selectedValue)
+
+    function handleSetCategory(category) {
+        if (selectedValue === category) {
+            setSelectedValue(""); // toggle off
+        } else {
+            setSelectedValue(category); // set baru
+        }
+    }
+    
     return (
         <>
             <Provider>
                 <Navbar />
                 <Banner />
-                <CategoryCard setValue={setSelectedValue}/>
+                <CategoryCard setValue={handleSetCategory} />
                 <Product value={selectedValue} />
             </Provider>
         </>
