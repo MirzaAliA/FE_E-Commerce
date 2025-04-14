@@ -2,7 +2,7 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg fixed-top">
             <div className="container">
-                <a className="navbar-brand" href="#">Zakk Store</a>
+                <a className="navbar-brand" href="#">Mirza Store</a>
                 <li className="d-flex align-items-center mx-2 me-2 ms-auto d-lg-none">
                             <button className="btn-icon">
                                 <i className="bi bi-bag position-relative">
