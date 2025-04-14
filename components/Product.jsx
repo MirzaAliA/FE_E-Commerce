@@ -44,7 +44,7 @@ export default function Product({ value }) {
                                         <span className="title-description mt-3 mb-4">{p.description}</span>
                                     </div>
                                     <div className="price-wrapper d-flex justify-content-between align-items-center">
-                                        <span className="title-price">{p.price}</span>
+                                        <span className="title-price">Rp. {p.price}</span>
                                         <button className="sm-btn-primary">Buy <i className="bi bi-bag-plus"></i></button>
                                     </div>
                                 </div>
